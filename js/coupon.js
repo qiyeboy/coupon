@@ -1,21 +1,3 @@
-(function(win,doc){
-	var s = doc.createElement("script"), h = doc.getElementsByTagName("head")[0];
-	if (!win.alimamatk_show) {
-		s.charset = "gbk";
-		s.async = true;
-		s.src = "http://a.alimama.cn/tkapi.js";
-		h.insertBefore(s, h.firstChild);
-	};
-	var o = {
-		pid: "mm_33578781_16572921_61632232",
-		appkey: "23462007",
-		unid: "coupon",
-		type: "click" 
-	};
-	win.alimamatk_onload = win.alimamatk_onload || [];
-	win.alimamatk_onload.push(o);
-})(window,document);
-
 var itemList = new Vue({
   el: '#content_item',
   data: {
